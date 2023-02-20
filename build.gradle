@@ -1,0 +1,47 @@
+defaultTasks 'clean', 'test', 'aggregate'
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+group 'com.reto.sistecredito.web'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+repositories {
+
+    mavenCentral()
+}
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:3.2.0")
+    }
+}
+ext {
+    serenityVersion = '3.2.0'
+    serenityCucumberVersion = '3.2.0'
+
+}
+test {
+    useJUnitPlatform {
+        excludeTags("disabled")
+    }
+    systemProperties(project.gradle.startParameter.systemPropertiesArgs)
+    testLogging.showStandardStreams = true
+    testLogging.exceptionFormat = 'full'
+    outputs.upToDateWhen { false }
+    finalizedBy('aggregate')
+}
+dependencies {
+    implementation group: 'org.slf4j', name: 'slf4j-log4j12', version: '2.0.0-alpha1'
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-junit5:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-ensure:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
+
+}
+gradle.startParameter.continueOnFailure = true
