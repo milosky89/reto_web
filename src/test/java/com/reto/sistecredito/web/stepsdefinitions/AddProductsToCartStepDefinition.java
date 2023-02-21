@@ -1,5 +1,6 @@
 package com.reto.sistecredito.web.stepsdefinitions;
 
+import com.reto.sistecredito.web.tasks.AddProducts;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -7,8 +8,7 @@ import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
-import static net.serenitybdd.screenplay.actors.OnStage.setTheStage;
-import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
+import static net.serenitybdd.screenplay.actors.OnStage.*;
 
 public class AddProductsToCartStepDefinition {
 
@@ -22,7 +22,7 @@ public class AddProductsToCartStepDefinition {
     }
     @When("add products to cart")
     public void addProductsToCart() {
-
+        theActorInTheSpotlight().attemptsTo(AddProducts.toCart());
     }
     @Then("I can see the name of the products")
     public void iCanSeeTheNameOfTheProducts() {
