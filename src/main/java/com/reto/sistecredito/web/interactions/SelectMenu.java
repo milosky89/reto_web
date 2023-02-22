@@ -8,29 +8,36 @@ import net.serenitybdd.screenplay.targets.Target;
 
 
 import static com.reto.sistecredito.web.ui.UIHome.BTN_VIEWALL;
+import static com.reto.sistecredito.web.ui.UIHome.NOTIFICATION2;
 import static com.reto.sistecredito.web.util.RandomNumber.generatRandomNumber;
 
 public class SelectMenu implements Interaction {
 
-    String categoryValue = generatRandomNumber(1);
     private Target menu;
     private Target category;
+    private Target subcategory;
 
-    public SelectMenu(Target menu, Target category){
+    public SelectMenu(Target menu, Target category, Target subcategory){
         this.menu=menu;
         this.category=category;
+        this.subcategory=subcategory;
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(menu),
-                Click.on(category.of(categoryValue)),
-                Click.on(BTN_VIEWALL)
+                Click.on(category),
+                Click.on(subcategory)
         );
+        if(NOTIFICATION2.isVisibleFor(actor)){
+            actor.attemptsTo(
+                    Click.on(NOTIFICATION2)
+            );
+        }
     }
 
-    public static SelectMenu inHome(Target menu, Target category){
-        return Tasks.instrumented(SelectMenu.class,menu,category);
+    public static SelectMenu inHome(Target menu, Target category, Target subcategory){
+        return Tasks.instrumented(SelectMenu.class,menu,category,subcategory);
     }
 }

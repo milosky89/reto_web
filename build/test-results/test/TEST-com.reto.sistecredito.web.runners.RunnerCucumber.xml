@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.reto.sistecredito.web.runners.RunnerCucumber" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-21T14:16:08" hostname="MacBook-Pro-ML-140301.local" time="14.267">
+<testsuite name="com.reto.sistecredito.web.runners.RunnerCucumber" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-22T15:53:48" hostname="MacBook-Pro-ML-140301.local" time="240.238">
   <properties/>
-  <testcase name="Choose products in falabella" classname="com.reto.sistecredito.web.runners.RunnerCucumber" time="14.267"/>
+  <testcase name="Choose products in falabella" classname="com.reto.sistecredito.web.runners.RunnerCucumber" time="240.238"/>
   <system-out><![CDATA[?[92m|-- Given "User" want to navigate to "https://www.falabella.com.co/"?[0m
 ?[92m|---- User opens the https://www.falabella.com.co/?[0m
 ?[92m|-- When add products to cart?[0m
@@ -10,26 +10,48 @@
 ?[92m|------ User select menu?[0m
 ?[92m|-------- User clicks on category button?[0m
 ?[92m|-------- User clicks on select category?[0m
-?[92m|-------- User clicks on view all button?[0m
+?[92m|-------- User clicks on Select subcategory?[0m
+?[92m|------ User select product?[0m
+?[92m|-------- User clicks on select product?[0m
+?[92m|-------- User clicks on add to bag button?[0m
+?[92m|-------- User add quantity?[0m
+?[92m|---------- User clicks on increase amount
+?[0m
+?[92m|---------- User clicks on increase amount
+?[0m
+?[92m|------ User clicks on Button to close the bag?[0m
+?[92m|------ User select menu?[0m
+?[92m|-------- User clicks on category button?[0m
+?[92m|-------- User clicks on select category?[0m
+?[92m|-------- User clicks on Select subcategory?[0m
+?[92m|------ User select product?[0m
+?[92m|-------- User clicks on select product?[0m
+?[92m|-------- User clicks on add to bag button?[0m
+?[92m|-------- User add quantity?[0m
+?[92m|------ User clicks on Button to close the bag?[0m
+?[92m|------ User clicks on Cart button?[0m
 ?[92m|-- Then I can see the name of the products?[0m
+?[92m|---- Then validate products?[0m
 ?[92m|-- And I can see the number of products?[0m
+?[92m|---- Then validate quantity?[0m
 ?[92m|-- And I can see the subtotal of all products?[0m
+?[92m|---- Then validate total?[0m
 ]]></system-out>
   <system-err><![CDATA[log4j:WARN No appenders could be found for logger (io.cucumber.core.plugin.SerenityReporter).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 60769
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 56588
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1676988972.816][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-Feb 21, 2023 9:16:12 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1677081231.463][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb 22, 2023 10:53:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Feb 21, 2023 9:16:12 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 22, 2023 10:53:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
-Feb 21, 2023 9:16:12 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 22, 2023 10:53:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Unable to find CDP implementation matching 110.
-Feb 21, 2023 9:16:12 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+Feb 22, 2023 10:53:51 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>
