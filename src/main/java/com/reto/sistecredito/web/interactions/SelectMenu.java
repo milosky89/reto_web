@@ -6,10 +6,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.targets.Target;
 
-
-import static com.reto.sistecredito.web.ui.UIHome.BTN_VIEWALL;
 import static com.reto.sistecredito.web.ui.UIHome.NOTIFICATION2;
-import static com.reto.sistecredito.web.util.RandomNumber.generatRandomNumber;
 
 public class SelectMenu implements Interaction {
 
