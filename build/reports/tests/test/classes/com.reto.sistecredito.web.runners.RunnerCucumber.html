@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2m23.29s</div>
+<div class="counter">1m28.35s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,234 +61,16 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 <li>
-<a href="#tab2">Standard output</a>
-</li>
-<li>
-<a href="#tab3">Standard error</a>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Choose products in falabella"></a>
-<h3 class="failures">Choose products in falabella</h3>
-<span class="code">
-<pre>net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException: Expected condition failed: waiting for By.xpath:  //div[@id = 'testId-searchResults-products']//following::b[1] to be present (tried for 25 second(s) with 100 milliseconds interval)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'MacBook-Pro-ML-140301.local', ip: '2800:e2:9780:1d73:b51c:bfa4:eb48:2e3f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '1.8.0_362'
-Driver info: driver.version: unknown
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.throwShouldBePresentErrorWithCauseIfPresent(WebElementFacadeImpl.java:1019)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:992)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementPresent(WebElementFacadeImpl.java:895)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1185)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$55MjDAti.performAs$accessor$1cJNKtxP(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:503)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:483)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:457)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:209)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:196)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:84)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$55MjDAti.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:276)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:256)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:197)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:204)
-	at com.reto.sistecredito.web.interactions.SelectProduct.performAs(SelectProduct.java:19)
-	at com.reto.sistecredito.web.interactions.SelectProduct$ByteBuddy$cGgDFysu.performAs$accessor$knd7yOMS(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:503)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:483)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:457)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:209)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:196)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:84)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at com.reto.sistecredito.web.interactions.SelectProduct$ByteBuddy$cGgDFysu.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:276)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:256)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:197)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:204)
-	at com.reto.sistecredito.web.tasks.AddProducts.performAs(AddProducts.java:35)
-	at com.reto.sistecredito.web.tasks.AddProducts$ByteBuddy$U7tTxLa7.performAs$accessor$T3EErqE3(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:503)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:483)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:457)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:209)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:196)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:84)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at com.reto.sistecredito.web.tasks.AddProducts$ByteBuddy$U7tTxLa7.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:276)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:256)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:197)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:204)
-	at com.reto.sistecredito.web.stepsdefinitions.AddProductsToCartStepDefinition.addProductsToCart(AddProductsToCartStepDefinition.java:29)
-	at ✽.add products to cart(file:///Users/user/Desktop/Reto%20SisteCredito/Web/retoWeb/src/test/resources/features/add_product.feature:12)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath:  //div[@id = 'testId-searchResults-products']//following::b[1] to be present (tried for 25 second(s) with 100 milliseconds interval)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'MacBook-Pro-ML-140301.local', ip: '2800:e2:9780:1d73:b51c:bfa4:eb48:2e3f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '1.8.0_362'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:989)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementPresent(WebElementFacadeImpl.java:895)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1185)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$55MjDAti.performAs$accessor$1cJNKtxP(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:503)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:483)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:457)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:209)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:196)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:84)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$55MjDAti.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:276)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:256)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:197)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:204)
-	at com.reto.sistecredito.web.interactions.SelectProduct.performAs(SelectProduct.java:19)
-	at com.reto.sistecredito.web.interactions.SelectProduct$ByteBuddy$cGgDFysu.performAs$accessor$knd7yOMS(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:503)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:483)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:457)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:209)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:196)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:84)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at com.reto.sistecredito.web.interactions.SelectProduct$ByteBuddy$cGgDFysu.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:276)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:256)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:197)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:204)
-	at com.reto.sistecredito.web.tasks.AddProducts.performAs(AddProducts.java:35)
-	at com.reto.sistecredito.web.tasks.AddProducts$ByteBuddy$U7tTxLa7.performAs$accessor$T3EErqE3(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:503)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:483)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:457)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:209)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:196)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:84)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at com.reto.sistecredito.web.tasks.AddProducts$ByteBuddy$U7tTxLa7.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:276)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:256)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:197)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:204)
-	at com.reto.sistecredito.web.stepsdefinitions.AddProductsToCartStepDefinition.addProductsToCart(AddProductsToCartStepDefinition.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)
-	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:288)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
-	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
-	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -299,13 +81,13 @@ Driver info: driver.version: unknown
 </tr>
 </thead>
 <tr>
-<td class="failures">Choose products in falabella</td>
-<td class="failures">2m23.29s</td>
-<td class="failures">failed</td>
+<td class="success">Choose products in falabella</td>
+<td class="success">1m28.35s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre>?[92m|-- Given &quot;User&quot; want to navigate to &quot;https://www.falabella.com.co/&quot;?[0m
@@ -317,7 +99,6 @@ Driver info: driver.version: unknown
 ?[92m|-------- User clicks on category button?[0m
 ?[92m|-------- User clicks on select category?[0m
 ?[92m|-------- User clicks on Select subcategory?[0m
-?[92m|-------- User clicks on close notification 2?[0m
 ?[92m|------ User select product?[0m
 ?[92m|-------- User clicks on select product?[0m
 ?[92m|-------- User clicks on add to bag button?[0m
@@ -337,30 +118,37 @@ Driver info: driver.version: unknown
 ?[92m|-------- User clicks on Select subcategory?[0m
 ?[92m|------ User select product?[0m
 ?[92m|-------- User clicks on select product?[0m
-?[92m|---------- Then I can see the name of the products?[0m
-?[92m|---------- And I can see the number of products?[0m
-?[92m|---------- And I can see the subtotal of all products?[0m
+?[92m|-------- User clicks on add to bag button?[0m
+?[92m|-------- User add quantity?[0m
+?[92m|------ User clicks on Button to close the bag?[0m
+?[92m|------ User clicks on Cart button?[0m
+?[92m|-- Then I can see the name of the products?[0m
+?[92m|---- Then validate products?[0m
+?[92m|-- And I can see the number of products?[0m
+?[92m|---- Then validate quantity?[0m
+?[92m|-- And I can see the subtotal of all products?[0m
+?[92m|---- Then validate total?[0m
 </pre>
 </span>
 </div>
-<div id="tab3" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>log4j:WARN No appenders could be found for logger (io.cucumber.core.plugin.SerenityReporter).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 50426
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 50879
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677097527.356][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-Feb 22, 2023 3:25:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1677197201.011][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb 23, 2023 7:06:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Feb 22, 2023 3:25:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 23, 2023 7:06:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
-Feb 22, 2023 3:25:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 23, 2023 7:06:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Unable to find CDP implementation matching 110.
-Feb 22, 2023 3:25:27 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+Feb 23, 2023 7:06:41 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 </pre>
 </span>
@@ -373,7 +161,7 @@ WARNING: Unable to find version of CDP to use for . You may need to include a de
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at Feb 22, 2023 3:27:49 PM</p>
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at Feb 23, 2023 7:08:08 PM</p>
 </div>
 </div>
 </body>

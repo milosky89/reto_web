@@ -29,9 +29,8 @@ public class AddProducts implements Task {
 
             actor.attemptsTo(Click.on(NOTIFICATION));
        for (int i=0; i < 2; i++){
-           String quantity = generatRandomNumber(1);
-           String categoryValue = generatRandomNumber(1);
-           String subCategory = generatRandomNumberMenu(1);
+           String quantity = generatRandomNumber();
+           String subCategory = generatRandomNumberMenu();
            actor.attemptsTo(
                    SelectMenu.inHome(BTN_CATEGORY,SELECT_CATEGORY.of("3"),SELECT_SUBCATEGORY.of(subCategory)),
                    SelectProduct.inCart(quantity)

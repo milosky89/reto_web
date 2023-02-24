@@ -42,6 +42,7 @@ dependencies {
     implementation "net.serenity-bdd:serenity-junit5:$rootProject.ext.serenityVersion"
     implementation "net.serenity-bdd:serenity-ensure:$rootProject.ext.serenityVersion"
     implementation "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
+    implementation 'com.github.javafaker:javafaker:1.0.2'
 
 }
 gradle.startParameter.continueOnFailure = true

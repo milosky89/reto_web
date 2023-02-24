@@ -19,7 +19,7 @@ public class SelectProduct implements Task {
               //Scroll.to(PRODUCT),
               Click.on(PRODUCT),
               Click.on(BTN_ADD_TO_BAG),
-              AddQuantity.product(BTN_INCREASE_AMOUNT,Integer.parseInt(quantity))
+              AddQuantity.product(Integer.parseInt(quantity))
       );
     }
     public static SelectProduct inCart(String quantity){
